@@ -1,0 +1,14 @@
+def f(n):
+    global k
+    if n < 3:
+        print('*')
+        k += 1
+        print(k)
+    else:
+        f(n - 1)
+        f(n - 2)
+        f(n - 2)
+
+
+k = 0
+f(6)
